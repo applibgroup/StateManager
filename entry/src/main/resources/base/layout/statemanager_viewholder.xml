@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+             ohos:width="match_parent"
+             ohos:height="120fp">
+
+    <com.example.mylibrary.StateLayout
+        ohos:id="$+id:statelayout"
+        ohos:width="match_parent"
+        ohos:height="match_content">
+
+        <Text
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:left_margin="15fp"
+            ohos:right_margin="15fp"
+            ohos:text="加载成功"
+            ohos:text_size="30fp" />
+    </com.example.mylibrary.StateLayout>
+</StackLayout>

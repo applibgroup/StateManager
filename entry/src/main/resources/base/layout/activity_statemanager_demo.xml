@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--The inside of the StateLayout only oen direct View-->
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                   ohos:id="$+id:content"
+                   ohos:width="match_parent"
+                   ohos:height="match_parent"
+                   ohos:orientation="vertical">
+
+    <Button
+        ohos:id="$+id:show_loading"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:text="显示loading"/>
+
+
+    <Button
+        ohos:id="$+id:show_exception"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:top_margin="20fp"
+        ohos:text="显示exception" />
+
+    <Button
+        ohos:id="$+id:show_core"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:top_margin="20fp"
+        ohos:text="显示core" />
+</DirectionalLayout>
+
+
