@@ -48,7 +48,7 @@ public class CoreState extends BaseState {
 
     @Override
     protected void onViewCreated(Component stateView) {
-
+        // it is used to create view in listcontainer .
     }
 
 
