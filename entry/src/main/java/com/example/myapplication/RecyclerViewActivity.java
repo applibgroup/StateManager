@@ -25,7 +25,7 @@ public class RecyclerViewActivity extends Ability {
         recyclerView.setItemClickedListener(new ListContainer.ItemClickedListener() {
             @Override
             public void onItemClicked(ListContainer holder, Component component, int position, long l) {
-
+                //This method is empty because there is no woking for we it, bu twe need Listcontainer.ItemClickedListener().
             }
         });
 
