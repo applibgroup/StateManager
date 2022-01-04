@@ -7,8 +7,10 @@
       "name": "1.0.0"
     }
   },
-  "deviceConfig": {},
+  "deviceConfig": {
+  },
   "module": {
+    "theme": "@styles:AppTheme",
     "package": "com.example.myapplication",
     "name": "com.example.myapplication.MyApplication",
     "mainAbility": "com.example.myapplication.MainAbility",
@@ -38,7 +40,7 @@
         "name": "com.example.myapplication.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
-        "label": "$string:entry_MainAbility",
+        "label": "$string:StateManager",
         "type": "page",
         "launchType": "standard"
       },

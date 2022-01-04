@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 
+import com.example.myapplication.state.ExceptionState;
 import com.example.myapplication.state.LoadingState;
 import com.example.mylibrary.StateLayout;
 import com.example.mylibrary.state.CoreState;
@@ -52,11 +53,10 @@ public class RecyclerViewActivity extends Ability {
     @Override
     public Component getComponent(int viewType, Component component, ComponentContainer parent) {
         Component viewHolder = null;
-        if (viewType == 0) {
-
+        if (viewType == 9) {
             viewHolder =  LayoutScatter.getInstance(RecyclerViewActivity.this).parse(ResourceTable.Layout_statemanager_viewholder, parent, false);
-            StateLayout stateLayout = (StateLayout) viewHolder.findComponentById(ResourceTable.Id_statelayout);
-            stateLayout.showState(LoadingState.STATE);
+//            StateLayout stateLayout = (StateLayout) viewHolder.findComponentById(ResourceTable.Id_statelayout);
+//            stateLayout.showState(LoadingState.STATE);
 
          } else {
             viewHolder = LayoutScatter.getInstance(RecyclerViewActivity.this).parse(ResourceTable.Layout_default_viewholder, parent, false);

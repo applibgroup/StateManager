@@ -5,7 +5,7 @@ import com.example.myapplication.ResourceTable;
 import com.example.mylibrary.state.BaseState;
 import ohos.agp.components.Component;
 
-public class LoadingState extends BaseState {
+public class    LoadingState extends BaseState {
     public static final String STATE = "LoadingState";
 
     public static final String EVENT_CLICK = "LoadingState_CLICK";
@@ -13,7 +13,7 @@ public class LoadingState extends BaseState {
     @Override
     protected int getLayoutId() {
 
-        //return R.layout.loading_state;
+
         return ResourceTable.Layout_loading_state;
     }
 

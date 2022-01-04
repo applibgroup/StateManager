@@ -20,6 +20,7 @@
         ohos:width="match_parent"
         ohos:height="match_content"
         ohos:text="点击显示Loading态"
+        ohos:background_element="#ffcccccc"
         />
 
     <com.example.mylibrary.StateLayout
@@ -29,10 +30,10 @@
         ohos:background_element="#cccccc">
 
         <Text
-            ohos:width="match_parent"
-            ohos:height="match_content"
+            ohos:height="match_parent"
+            ohos:width="match_content"
             ohos:text="StateLayout Demo"
-            />
+            ohos:text_alignment="start"/>
 
     </com.example.mylibrary.StateLayout>
 </DirectionalLayout>

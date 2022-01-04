@@ -17,6 +17,8 @@
         ohos:height="match_content"
         ohos:top_margin="20fp"
         ohos:text="显示Loading态"
+        ohos:background_element="#ffcccccc"
+
         />
 
     <Button
@@ -25,6 +27,7 @@
         ohos:height="match_content"
         ohos:top_margin="20fp"
         ohos:text="显示Exception态"
+        ohos:background_element="#ffcccccc"
          />
 
     <Button
@@ -33,6 +36,7 @@
         ohos:height="match_content"
         ohos:top_margin="20fp"
         ohos:text="直接StateManagerActivity"
+        ohos:background_element="#ffcccccc"
        />
 
     <Button
@@ -41,6 +45,7 @@
         ohos:height="match_content"
         ohos:top_margin="20fp"
         ohos:text="RecyclerView局部使用"
+        ohos:background_element="#ffcccccc"
          />
 
     <Button
@@ -49,6 +54,7 @@
         ohos:height="match_content"
         ohos:top_margin="20fp"
         ohos:text="普通局部使用StateLayout"
+        ohos:background_element="#ffcccccc"
         />
 
     <Button
@@ -57,5 +63,7 @@
         ohos:height="match_content"
         ohos:top_margin="20fp"
         ohos:text="动态注册自定义State"
+        ohos:background_element="#ffcccccc"
         />
+
 </DirectionalLayout>
