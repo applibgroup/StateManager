@@ -59,9 +59,9 @@ sonarqube {
     properties {
         property "sonar.projectKey", "applibgroup_StateManager"
         property "sonar.organization", "applibgroup"
-        //property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.host.url", "http://localhost:9000"
-        property "sonar.login", "bbf10c6152e1753b1d470c883cc0fcc5059a6e6b"
+        property "sonar.host.url", "https://sonarcloud.io"
+        //property "sonar.host.url", "http://localhost:9000"
+        //property "sonar.login", "bbf10c6152e1753b1d470c883cc0fcc5059a6e6b"
         property "sonar.sources", "entry,mylibrary"
         property "sonar.java.binaries", "entry/build"
         property "sonar.java.checkstyle.reportPaths", "build/reports/checkstyle/checkstyle.xml"
