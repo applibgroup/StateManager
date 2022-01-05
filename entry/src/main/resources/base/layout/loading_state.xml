@@ -10,7 +10,7 @@
         ohos:id="$+id:round_progress_bar"
         ohos:progress="20"
         ohos:start_angle="45"
-        ohos:max_angle="360"
+        ohos:max_angle="270"
         ohos:progress_hint_text="Round"
         ohos:height="match_content"
         ohos:width="match_content"

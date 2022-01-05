@@ -20,8 +20,7 @@
         ohos:width="match_parent"
         ohos:height="match_content"
         ohos:text="点击显示Loading态"
-        ohos:background_element="#ffcccccc"
-        />
+        ohos:background_element="#ffcccccc"/>
 
     <com.example.mylibrary.StateLayout
         ohos:id="$+id:statelayout"
