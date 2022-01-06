@@ -11,7 +11,7 @@
         ohos:id="$+id:show_loading"
         ohos:width="match_content"
         ohos:height="match_content"
-        ohos:text="显示loading"/>
+        ohos:text="Display Loading state"/>
 
 
     <Button
@@ -19,14 +19,14 @@
         ohos:width="match_content"
         ohos:height="match_content"
         ohos:top_margin="20fp"
-        ohos:text="显示exception" />
+        ohos:text="Show exception" />
 
     <Button
         ohos:id="$+id:show_core"
         ohos:width="match_content"
         ohos:height="match_content"
         ohos:top_margin="20fp"
-        ohos:text="显示core" />
+        ohos:text="Show core" />
 </DirectionalLayout>
 
 

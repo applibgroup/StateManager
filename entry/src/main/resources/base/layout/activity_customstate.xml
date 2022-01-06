@@ -16,14 +16,14 @@
             ohos:left_margin="15fp"
             ohos:right_margin="15fp"
             ohos:top_margin="20fp"
-            ohos:text="StateManager自定义State" />
+            ohos:text="StateManager Custom State" />
 
         <Button
             ohos:id="$+id:request_data"
             ohos:width="match_parent"
             ohos:height="match_content"
             ohos:element_top="20dp"
-            ohos:text="请求数据"
+            ohos:text="Request data"
         ohos:background_element="#ffcccccc"/>
     </DirectionalLayout>
 

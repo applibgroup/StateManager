@@ -14,8 +14,8 @@ import ohos.agp.components.StackLayout;
 import ohos.app.Context;
 
 /**
- * TODO 如果动态添加子view，暂时没有好的办法禁止
- * 建议不要使用addView()方法，添加子view，尽量使用addState的方式注册
+ * TODO If you add child views dynamically, there is no good way to prohibit it
+ * It is recommended not to use the addView() method，Add child view，Try to use addState to register
  */
 public class StateLayout extends StackLayout implements StateChanger, StateLoader {
 

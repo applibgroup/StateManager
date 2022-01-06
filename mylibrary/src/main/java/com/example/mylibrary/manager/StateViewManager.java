@@ -6,7 +6,7 @@ import ohos.agp.components.Component;
 import ohos.agp.components.ComponentContainer;
 
 /**
- * 视图状态管理
+ * View state management
  */
 public interface StateViewManager {
 
@@ -15,7 +15,7 @@ public interface StateViewManager {
 
 
     /**
-     * 设置核心布局
+     * Set up the core layout
      *
      * @param resId
      * @return

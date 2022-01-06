@@ -13,7 +13,7 @@
             ohos:height="match_content"
             ohos:left_margin="15fp"
             ohos:right_margin="15fp"
-            ohos:text="加载成功"
+            ohos:text="Successfully loaded"
             ohos:text_alignment="center"
             ohos:text_size="30fp" />
     </com.example.mylibrary.StateLayout>

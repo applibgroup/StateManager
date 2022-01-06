@@ -10,7 +10,7 @@ import ohos.app.Context;
 import java.util.HashMap;
 
 /**
- * 状态仓库
+ * State warehouse
  */
 public class StateRepository implements StateLoader {
 
@@ -23,7 +23,7 @@ public class StateRepository implements StateLoader {
     }
 
     /**
-     * 用于映射State和具体State对象
+     * Used to map State and specific State objects
      */
     protected HashMap<String, IState> stateMap = new HashMap<String, IState>(5);
     protected static HashMap<String, Class> stateClazzMap = new HashMap<String, Class>(5);

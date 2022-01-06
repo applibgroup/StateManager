@@ -19,13 +19,13 @@ import ohos.app.Context;
 import java.util.Iterator;
 
 /**
- * StateManager  管理各个状态的切换
+ * StateManager  Manage the switching of each state
  */
 public class StateManager implements StateViewManager, StateLoader, StateChanger {
     protected Context context;
 
     /**
-     * 整体View模板
+     * Overall View template
      */
     private ComponentContainer overallView;
 
@@ -60,14 +60,14 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
         IState stateChanger = null;
         while (iterator.hasNext()) {
             stateChanger = iterator.next();
-            //将按钮事件添加到监听中
+            //Add the button event to the listener
             stateChanger.setStateEventListener(listener);
         }
     }
 
 
     /**
-     * 根据viewState，Item自己去查找
+     * According to the viewState, the Item will find it by itself
      *
      * @param state
      */
@@ -79,14 +79,13 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
         IState iState = stateRepository.get(state);
         if (iState == null) {
            // HiLogLabel hiLogLabel=null;
-            LogUtil.warn("StateManager", "没有注册对应的" + state + "State，需要调用addStater()进行注册");
-            //HiLog.warn("StateManager", "没有注册对应的" + state + "State，需要调用addStater()进行注册");
-            return false;
+            LogUtil.warn("StateManager", "No corresponding registration" + state + "State, need to call addStater() to register");
+             return false;
         }
         iState.setStateEventListener(listener);
         boolean isSuccess = StateViewHelper.showStater(context, overallView, iState);
         if (!isSuccess) {
-            //如果state的View为null等则切换状态不成功
+            //If the state's View is null, etc., the switch state is unsuccessful
             return false;
         }
         if (currentState != null) {
@@ -102,7 +101,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
 
 
     /**
-     * 根据viewState，Item自己去查找
+     * According to the viewState, the Item will find it by itself
      *
      * @param state
      */
@@ -135,7 +134,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
         }
 
         Component view = LayoutScatter.getInstance(context).parse(layoutId, overallView, false);
-        //注册核心view的State
+        //Register the State of the core view
         addState(new CoreState(view));
         showState(CoreState.STATE);
 
@@ -151,7 +150,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
                     new StackLayout.LayoutConfig(ComponentContainer.LayoutConfig.MATCH_PARENT, ComponentContainer.LayoutConfig.MATCH_PARENT));
         }
 
-        //注册核心view的State
+        //Register the State of the core view
         addState(new CoreState(view));
         showState(CoreState.STATE);
         return overallView;
@@ -169,7 +168,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
 
 
     /**
-     * 注册一个状态改变器，如果有重复的状态改变器，则不添加
+     * Register a state changer, if there are duplicate state changers, do not add
      *
      * @param stater
      */
@@ -177,7 +176,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
     public boolean addState(IState stater) {
         if (stater != null) {
             stater.setStateEventListener(listener);
-            //如果存在替换流程，需要将之前的StateView移除
+            //If there is a replacement process, the previous StateView needs to be removed
             if(!TextTool.isNullOrEmpty(stater.getState())){
                 removeState(stater.getState());
             }
@@ -189,7 +188,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
 
 
     /**
-     * 移除对应的状态加载器
+     * Remove the corresponding state loader
      */
     @Override
     public boolean removeState(String state) {
@@ -197,7 +196,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
             return false;
         }
         Component stateView = getStateView(state);
-        //移除对应状态的同时，也需要移除对应的View
+        //While removing the corresponding state, you also need to remove the corresponding View
         if (stateView != null) {
             overallView.removeComponent(stateView);
         }
@@ -248,7 +247,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
     }
 
     /**
-     * destory或者destoryView的时候，调用
+     * When destroy or destroyView, call
      */
     public void onDestoryView() {
         overallView = null;

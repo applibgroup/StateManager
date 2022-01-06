@@ -13,13 +13,13 @@
         ohos:width="match_parent"
         ohos:height="match_content"
         ohos:top_margin="10fp"
-        ohos:text="StateLayout 可以支持局部刷新等状态" />
+        ohos:text="StateLayout can support partial refresh and other states" />
 
     <Button
         ohos:id="$+id:refresh"
         ohos:width="match_parent"
         ohos:height="match_content"
-        ohos:text="点击显示Loading态"
+        ohos:text="Click to display Loading state"
         ohos:background_element="#ffcccccc"/>
 
     <com.example.mylibrary.StateLayout

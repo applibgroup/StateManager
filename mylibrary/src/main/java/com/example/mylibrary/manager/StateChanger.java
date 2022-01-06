@@ -3,30 +3,30 @@ package com.example.mylibrary.manager;
 import com.example.mylibrary.state.StateProperty;
 
 /**
- * 状态观察者
+ * State observer
  */
 public interface StateChanger {
 
     /**
-     * 当前需要显示的StateView
-     * 非线程安全
+     * The StateView that currently needs to be displayed
+     * Not thread safe
      *
-     * @param state 当前需要显示的view对应的状态
+     * @param state The current status corresponding to the view that needs to be displayed
      * @return
      */
     boolean showState(String state);
 
     /**
-     * 当前需要显示的StateView
-     * 非线程安全
+     * The StateView that currently needs to be displayed
+     * Not thread safe
      *
-     * @param state 当前需要显示的view对应的状态
+     * @param state The current status corresponding to the view that needs to be displayed
      * @return
      */
     boolean showState(StateProperty state);
 
     /**
-     * 获取当前状态
+     * Get current status
      *
      * @return
      */
@@ -34,7 +34,7 @@ public interface StateChanger {
 
 
     /**
-     * 设置当前状态下的一些按钮操作回调
+     * Set some button operation callbacks in the current state
      *
      * @param listener
      */

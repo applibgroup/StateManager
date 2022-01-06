@@ -61,10 +61,10 @@ public class RecyclerViewActivity extends Ability {
          } else {
             viewHolder = LayoutScatter.getInstance(RecyclerViewActivity.this).parse(ResourceTable.Layout_default_viewholder, parent, false);
             Text text = (Text) viewHolder.findComponentById(ResourceTable.Id_textview);
-            text.setText("这是第" + (viewType + 1) + "个Item");
+            text.setText("This is the first " + (viewType + 1) + "Piece  Item");
         }
 
-        return viewHolder;
+        return viewHolder; 
     }
 
         public class StateManagerViewHolder extends Component{

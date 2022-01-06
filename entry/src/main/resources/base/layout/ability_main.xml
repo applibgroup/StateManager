@@ -16,7 +16,7 @@
         ohos:width="match_parent"
         ohos:height="match_content"
         ohos:top_margin="20fp"
-        ohos:text="显示Loading态"
+        ohos:text="Display Loading state"
         ohos:background_element="#ffcccccc"
 
         />
@@ -26,7 +26,7 @@
         ohos:width="match_parent"
         ohos:height="match_content"
         ohos:top_margin="20fp"
-        ohos:text="显示Exception态"
+        ohos:text="Show Exception state"
         ohos:background_element="#ffcccccc"
          />
 
@@ -35,7 +35,7 @@
         ohos:width="match_parent"
         ohos:height="match_content"
         ohos:top_margin="20fp"
-        ohos:text="直接StateManagerActivity"
+        ohos:text="Direct StateManagerActivity"
         ohos:background_element="#ffcccccc"
        />
 
@@ -44,7 +44,7 @@
         ohos:width="match_parent"
         ohos:height="match_content"
         ohos:top_margin="20fp"
-        ohos:text="RecyclerView局部使用"
+        ohos:text="RecyclerView Partial Use"
         ohos:background_element="#ffcccccc"
          />
 
@@ -53,7 +53,7 @@
         ohos:width="match_parent"
         ohos:height="match_content"
         ohos:top_margin="20fp"
-        ohos:text="普通局部使用StateLayout"
+        ohos:text="Ordinary partial use of StateLayout"
         ohos:background_element="#ffcccccc"
         />
 
@@ -62,7 +62,7 @@
         ohos:width="match_parent"
         ohos:height="match_content"
         ohos:top_margin="20fp"
-        ohos:text="动态注册自定义State"
+        ohos:text="Dynamically register a Custom State"
         ohos:background_element="#ffcccccc"
         />
 

@@ -4,7 +4,7 @@ package com.example.mylibrary.manager;
 import ohos.agp.components.Component;
 
 /**
- * 异常界面和数据为空界面按钮点击事件监听
+ * Abnormal interface and data is empty interface button click event monitoring
  */
 public interface StateEventListener {
     void onEventListener(String state, Component view);

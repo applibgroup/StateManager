@@ -5,7 +5,7 @@ import ohos.agp.components.Component;
 import ohos.agp.components.ComponentContainer;
 
 /**
- * 核心UI界面
+ * Core UI interface
  */
 public class CoreState extends BaseState {
 
@@ -17,7 +17,7 @@ public class CoreState extends BaseState {
     }
 
     /**
-     * 支持创建多个CoreState时，需要指定不同的State，达到分离业务逻辑
+     * When supporting the creation of multiple CoreStates, different States need to be specified to achieve separation of business logic
      *
      * @param coreView
      * @param state
@@ -29,7 +29,7 @@ public class CoreState extends BaseState {
 
 
     /**
-     * 如果使用这个构造，需要重写{@link BaseState#getLayoutId()}方法
+     * If you use this structure, you need to rewrite{@link BaseState#getLayoutId()}method
      * @param view
      */
     protected CoreState(ComponentContainer view) { }

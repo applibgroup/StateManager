@@ -31,9 +31,9 @@ public class CustomStateActivity extends Ability {
             EventHandler eventhandler = new EventHandler(EventRunner.getMainEventRunner());
             eventhandler.postTask(() -> {
                 BizState.BizMo bizMo = new BizState.BizMo();
-                bizMo.title = "我是自定义State";
-                bizMo.desc = "动态注册一个State，只有当需要展示State的时候，才会动态创建View";
-                bizMo.content = "自定义State适合多个页面复用共同的逻辑，类似于轻量级的Fragment，尽量只做渲染层面的事";
+                bizMo.title = "I am a Custom State";
+                bizMo.desc = "Dynamically register a State, only when the State needs to be displayed, will the View be dynamically created";
+                bizMo.content = "Custom State is suitable for multiple pages to reuse common logic, similar to lightweight Fragment, try to only do the rendering level";
                 stateLayout.showState(bizMo);
             },3000);
 

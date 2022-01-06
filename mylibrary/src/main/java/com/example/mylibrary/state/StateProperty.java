@@ -1,7 +1,7 @@
 package com.example.mylibrary.state;
 
 /**
- * 自定义状态方案
+ * Custom status scheme
  */
 public interface StateProperty {
 

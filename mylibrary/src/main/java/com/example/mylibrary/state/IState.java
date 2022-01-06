@@ -6,7 +6,7 @@ import ohos.agp.components.ComponentContainer;
 import ohos.app.Context;
 
 /**
- * State生命周期管理
+ * State lifecycle management
  */
 public interface IState<T extends StateProperty> {
 
@@ -17,39 +17,39 @@ public interface IState<T extends StateProperty> {
     String ERROR = "error_state";
 
     /**
-     * StateView创建后，可以做一些操作
+     * After the StateView is created, you can do some operations
      */
     void onStateCreate(Context context, ComponentContainer parent);
 
 
     /**
-     * StateView显示后，可以做一些操作
+     * After StateView is displayed, you can do some operations
      */
     void onStateResume();
 
     /**
-     * StateView隐藏后，可以做一些操作
+     * After the StateView is hidden, you can do some operations
      */
     void onStatePause();
 
 
     /**
-     * 获取当前状态
+     * Get current status
      *
      * @return
      */
     String getState();
 
     /**
-     * 设置当前状态下的一些按钮操作回调
-     *
+     * Set some button operation callbacks in the current state
+     *Get the View of the state machine
      * @param listener
      */
     void setStateEventListener(StateEventListener listener);
 
 
     /**
-     * 获取状态机的View
+     * Get the View of the state machine
      *
      * @return
      */
@@ -57,7 +57,7 @@ public interface IState<T extends StateProperty> {
 
 
     /**
-     * 定制View里面控件的内容
+     * Customize the content of the controls in the View
      */
     void setViewProperty(T stateProperty);
 }

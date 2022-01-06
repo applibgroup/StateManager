@@ -8,8 +8,8 @@ import ohos.agp.components.LayoutScatter;
 import ohos.app.Context;
 
 /**
- * 基础状态器，加载一些界面
- * 所有的状态机都要实现这个类
+ * Basic state machine, load some interfaces
+ * All state machines must implement this class
  */
 public abstract class BaseState<T extends StateProperty> implements IState<T> {
 
@@ -18,17 +18,17 @@ public abstract class BaseState<T extends StateProperty> implements IState<T> {
     protected Context context;
 
     /**
-     * 状态View
+     * Status View
      */
     protected Component stateView;
 
     /**
-     * 状态属性：动态文案
+     * Status attribute: dynamic copywriting
      */
     protected T stateProperty;
 
     /**
-     * 视图状态里面的按钮监听
+     * Button monitoring in view state
      */
     protected StateEventListener stateEventListener;
     protected Component mOverallView;
@@ -59,7 +59,7 @@ public abstract class BaseState<T extends StateProperty> implements IState<T> {
     }
 
     /**
-     * 获取当前状态view
+     * Get the current state view
      *
      * @param stateView
      * @return

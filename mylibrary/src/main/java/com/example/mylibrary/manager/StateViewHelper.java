@@ -15,8 +15,8 @@ import ohos.app.Context;
 public class StateViewHelper {
 
     /**
-     * 显示视图
-     * 如果stateView为null，则需要创建
+     * Show view
+     * If stateView is null, you need to create
      *
      * @return
      */
@@ -49,8 +49,8 @@ public class StateViewHelper {
     }
 
     /**
-     * 隐藏视图
-     * 如果stateView没有创建，则不做处理
+     *Hide view
+     *If the stateView is not created, no processing is done
      *
      * @return
      */

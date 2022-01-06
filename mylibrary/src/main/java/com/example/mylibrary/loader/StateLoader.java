@@ -5,22 +5,22 @@ import com.example.mylibrary.state.IState;
 import ohos.agp.components.Component;
 
 /**
- * 状态加载器，加载各种状态
+ * State loader, load various states
  */
 public interface StateLoader {
 
 
     /**
-     * 注册一个状态器，如果有重复的状态改变器，则不添加
+     * Register a state device, if there are duplicate state changers, do not add
      *
      * @param changger
      */
     boolean addState(IState changger);
 
     /**
-     * 如果对应的状态加载器
+     * If the corresponding state loader
      *
-     * @param state 状态
+     * @param state state
      */
     boolean removeState(String state);
     Component getStateView(String state);
