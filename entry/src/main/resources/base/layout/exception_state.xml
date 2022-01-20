@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                   ohos:alignment="center"
+                   ohos:width="match_parent"
+                   ohos:height="match_parent"
+                   ohos:orientation="vertical">
+
+    <Text
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:text="Exception State"
+        ohos:text_size="18fp" />
+
+    <Button
+        ohos:id="$+id:exit"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:top_margin="20fp"
+        ohos:text="Click me,and exit"
+        ohos:background_element="#ffcccccc"
+        ohos:text_size="18fp"/>
+</DirectionalLayout>

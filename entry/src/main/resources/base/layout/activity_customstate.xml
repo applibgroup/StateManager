@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.mylibrary.StateLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                                          ohos:id="$+id:statelayout"
+                                          ohos:width="match_parent"
+                                          ohos:height="match_parent">
+
+    <DirectionalLayout
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:component_description="CoreState"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:width="match_content"
+            ohos:height="match_content"
+            ohos:left_margin="15fp"
+            ohos:right_margin="15fp"
+            ohos:top_margin="20fp"
+            ohos:text="StateManager Custom State" />
+
+        <Button
+            ohos:id="$+id:request_data"
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:element_top="20dp"
+            ohos:text="Request data"
+        ohos:background_element="#ffcccccc"/>
+    </DirectionalLayout>
+
+</com.example.mylibrary.StateLayout>

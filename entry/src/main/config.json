@@ -1,0 +1,101 @@
+{
+  "app": {
+    "bundleName": "com.example.myapplication",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "theme": "@styles:AppTheme",
+    "package": "com.example.myapplication",
+    "name": "com.example.myapplication.MyApplication",
+    "mainAbility": "com.example.myapplication.MainAbility",
+    "deviceType": [
+      "tablet",
+      "tv",
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": true
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.example.myapplication.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:StateManager",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "skills": [
+          {
+            "actions": [
+              "action.fourth"
+            ]
+          }
+        ],
+        "icon": "$media:icon",
+        "name": "com.example.myapplication.CustomStateActivity",
+        "description": "Java_Empty Ability",
+        "type": "page"
+      },
+      {
+        "skills": [
+          {
+            "actions": [
+              "action.second"
+            ]
+          }
+        ],
+        "icon": "$media:icon",
+        "name": "com.example.myapplication.RecyclerViewActivity",
+        "description": "Java_Empty Ability",
+        "type": "page"
+      },
+      {
+        "skills": [
+          {
+            "actions": [
+              "action.third"
+            ]
+          }
+        ],
+        "icon": "$media:icon",
+        "name": "com.example.myapplication.StateLayoutActivity",
+        "description": "Java_Empty Ability",
+        "type": "page"
+      },
+      {
+        "skills": [
+          {
+            "actions": [
+              "action.first"
+            ]
+          }
+        ],
+        "icon": "$media:icon",
+        "name": "com.example.myapplication.StateManagerDemoActivity",
+        "description": "Java_Empty Ability",
+        "type": "page"
+      }
+    ]
+  }
+}

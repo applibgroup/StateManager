@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                   ohos:width="match_parent"
+                   ohos:height="match_parent"
+                   ohos:orientation="vertical">
+
+    <Text
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:text="StateLayout" />
+
+    <Text
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:top_margin="10fp"
+        ohos:text="StateLayout can support partial refresh and other states" />
+
+    <Button
+        ohos:id="$+id:refresh"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:text="Click to display Loading state"
+        ohos:background_element="#ffcccccc"/>
+
+    <com.example.mylibrary.StateLayout
+        ohos:id="$+id:statelayout"
+        ohos:width="match_parent"
+        ohos:height="match_parent"
+        ohos:background_element="#cccccc">
+
+        <Text
+            ohos:height="match_parent"
+            ohos:width="match_content"
+            ohos:text="StateLayout Demo"
+            ohos:text_alignment="start"/>
+
+    </com.example.mylibrary.StateLayout>
+</DirectionalLayout>

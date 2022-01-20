@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout  xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:tools="http://schemas.ohos.com/tools"
+    ohos:id="$+id:activity_main"
+    ohos:width="match_parent"
+    ohos:height="match_parent"
+    ohos:orientation="vertical"
+    ohos:bottom_padding="16fp"
+    ohos:left_padding="16fp"
+    ohos:right_padding="16fp"
+    ohos:top_padding="16fp"
+    tools:context="com.example.myapplication.MainAbility">
+
+    <Button
+        ohos:id="$+id:show_loading"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:top_margin="20fp"
+        ohos:text="Display Loading state"
+        ohos:background_element="#ffcccccc"
+
+        />
+
+    <Button
+        ohos:id="$+id:show_exception"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:top_margin="20fp"
+        ohos:text="Show Exception state"
+        ohos:background_element="#ffcccccc"
+         />
+
+    <Button
+        ohos:id="$+id:statemanager_demo"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:top_margin="20fp"
+        ohos:text="Direct StateManagerActivity"
+        ohos:background_element="#ffcccccc"
+       />
+
+    <Button
+        ohos:id="$+id:recyclerview_demo"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:top_margin="20fp"
+        ohos:text="RecyclerView Partial Use"
+        ohos:background_element="#ffcccccc"
+         />
+
+    <Button
+        ohos:id="$+id:statelayout_demo"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:top_margin="20fp"
+        ohos:text="Ordinary partial use of StateLayout"
+        ohos:background_element="#ffcccccc"
+        />
+
+    <Button
+        ohos:id="$+id:customstate_demo"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:top_margin="20fp"
+        ohos:text="Dynamically register a Custom State"
+        ohos:background_element="#ffcccccc"
+        />
+
+</DirectionalLayout>

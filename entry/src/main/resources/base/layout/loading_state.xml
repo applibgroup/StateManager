@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                   ohos:alignment="center"
+                   ohos:height="match_parent"
+                   ohos:width="match_parent"
+                   ohos:orientation="vertical">
+
+
+    <RoundProgressBar
+        ohos:id="$+id:round_progress_bar"
+        ohos:progress="20"
+        ohos:start_angle="45"
+        ohos:max_angle="270"
+        ohos:progress_hint_text="Round"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:infinite="true"
+        ohos:progress_color="$color:colorAccent"
+        ohos:layout_alignment="center"
+        ohos:focus_border_enable="true"/>
+
+    <Text
+        ohos:id="$+id:click"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:text="Click me,and exit"
+        ohos:background_element="#ffcccccc"/>
+
+</DirectionalLayout>
